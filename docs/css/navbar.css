@@ -1,7 +1,7 @@
 :root {
     --base-font-size: 18px;
     --line-height: 1.6;
-    --primary-color: #3b4151;
+    --primary-color: #a74461;
     --link-color: #007acc;
     --container-padding: 15px;
 }
@@ -10,8 +10,8 @@ body {
     font-size: var(--base-font-size);
     line-height: var(--line-height);
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    background-color: #b0ceb0;
+    font-family: 'Courier New', monospace;
+    background-color: var(--primary-color);
 }
 
 header {
@@ -19,10 +19,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: var(--container-padding);
-    background: var(--primary-color) url('../images/EggHeader.png') no-repeat center / cover;
+    background: var(--primary-color);
+    background-image: url('../images/flowers.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(167,68,97,.80);
     color: white;
     position: relative;
-    box-shadow: inset 0 0 0 1000px rgba(59, 65, 81, 0.8);
     clear: both;
     z-index: 10;
 }
@@ -34,6 +38,7 @@ header {
 }
 
 .logo h1 {
+    font-family: 'Brush Script MT', cursive;
     font-size: 30px;
     letter-spacing: 0.25cm;
     margin: 0;
@@ -125,9 +130,13 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px 20px;
-    background: var(--primary-color) url('../images/EggHeader.png') no-repeat center / cover;
+    background: var(--primary-color);
+    background-image: url('../images/flowers.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(167,68,97,.80);
     color: white;
-    box-shadow: inset 0 0 0 1000px rgba(59, 65, 81, 0.8);
     gap: 10px;
     clear: both;
     position: relative;
@@ -237,7 +246,7 @@ footer {
 }
 
 .subscribe-btn {
-    background-color: #b3a862;
+    background-color: #d71c70;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -326,6 +335,10 @@ footer {
 
     .menu-toggle {
         align-self: flex-end;
+    }
+
+    .menu-items a {
+        font-size: 14px;
     }
 
     footer {
