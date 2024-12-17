@@ -33,14 +33,6 @@ app.get(routes.home, (req, res) => {
     res.render('index');
 });
 
-/*app.get(routes.LinkPage, (req, res) => {
-    res.render('LinkPage');
-});
-
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404: Page Not Found' });
-});*/
-
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
