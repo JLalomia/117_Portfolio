@@ -3,13 +3,50 @@
 
 <body>
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-row">
-            <h2><%= heroTitle %></h2>
-            <p><%= heroSubtitle %></p>
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-row">
+                <h2><%= heroTitle %></h2>
+                <p><%= heroSubtitle %></p>
+            </div>
         </div>
-        <div class="access">
-            <a href="<%= heroButtonLink %>" class="acc-btn"><%= heroButtonText %></a>
+        <div class="WWS-img">
+            <img src="<%= founderImage %>">
+        </div>
+    </section>
+
+     <!-- Call to Action -->
+     <section class="RS">
+        <div class="cta">
+            <% callsToAction.forEach(cta => { %>
+                <div class="cta-box">
+                    <h4><%= cta.title %></h4>
+                    <a href="<%= cta.link %>" class="download-btn"><%= cta.buttonText %></a>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+
+    <section class="Impact">
+        <h1><%= impactHeading %></h1>
+        <h3><%= impactSubheading %></h3>
+        <div class="Imp-row">
+            <% impactReviews.forEach(review => { %>
+                <div class="Imp">
+                    <div class="impact-preview">
+                        <iframe src="<%= review.link %>" 
+                                title="Website Preview" 
+                                style="border: none; width: 100%; height: 200px; margin-top: 10px; border-radius: 10px;">
+                        </iframe>
+                    </div>
+                    <div class="impact-content">
+                        <p><%= review.description %></p>
+                    </div>
+                    <a href="<%= review.link %>" class="impact-btn" target="_blank">
+                        Visit Website
+                    </a>
+                </div>
+            <% }) %>
         </div>
     </section>
 
@@ -26,60 +63,12 @@
                         <h3><%= topic.title %></h3>
                         <p><%= topic.description %></p>
                     </div>
-                    <a href="<%= topic.link %>" class="topic-btn">Learn More</a>
-                </div>
-            <% }) %>
-        </div>
-    </section>
-    
-    <!-- Call to Action -->
-    <section class="RS">
-        <div class="cta">
-            <% callsToAction.forEach(cta => { %>
-                <div class="cta-box">
-                    <h4><%= cta.title %></h4>
-                    <a href="<%= cta.link %>" class="download-btn"><%= cta.buttonText %></a>
+                   
                 </div>
             <% }) %>
         </div>
     </section>
 
-    <!-- Why We Started -->
-    <section class="WWS">
-        <div class="WWS-img">
-            <img src="<%= founderImage %>">
-        </div>
-        <div class="WWS-txt">
-            <h1><%= whyWeStartedHeading %></h1>
-            <p><%= whyWeStartedText1 %></p>
-            <p><%= whyWeStartedText2 %></p>
-        </div>
-    </section>
-
-    <!-- Impact -->
-    <section class="Impact">
-        <h1><%= impactHeading %></h1>
-        <h3><%= impactSubheading %></h3>
-        <div class="Imp-row">
-            <% impactReviews.forEach(review => { %>
-                <div class="Imp">
-                    <p><%= review %></p>
-                </div>
-            <% }) %>
-        </div>
-    </section>
-
-    <!-- Tutoring -->
-    <section class="tutor">
-        <div class="tutor-txt">
-            <h1><%= tutoringHeading %></h1>
-            <p><%= tutoringText1 %></p>
-            <p><%= tutoringText2 %></p>
-        </div>
-        <div class="tutor-img">
-            <img src="<%= tutorImage %>">
-        </div>
-    </section>
     <%- include('partials/footer') %>
 </body>
 </html>

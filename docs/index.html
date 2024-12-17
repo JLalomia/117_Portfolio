@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Egg</title>
+        <title>JL Portfolio</title>
         <link rel="stylesheet" href="./css/homepage.css">
         <link rel="stylesheet" href="./css/navbar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -21,8 +21,8 @@
 <body>
     <header class="Content-Nav">
         <div class="logo">
-            <h1><em>EGG</em></h1>
-            <h2><em>Are You Ready To Get Egg-cited?</em></h2>
+            <h1><em>Julianna Lalomia</em></h1>
+            <h2><em>Aspiring Developer</em></h2>
         </div>
         <nav class="menu">
             <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -32,13 +32,10 @@
             </button>
             <div class="menu-items" id="menuItems">
                 <ul>
-                    
-                        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
-                    
-                    <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
-                    <li><a href="#"><i class="fas fa-cogs"></i>Services</a></li>
-                    <li><a href="#"><i class="fas fa-briefcase"></i>Gear</a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+                    <li><a href="#hero"><i class="fas fa-info-circle"></i>About</a></li>
+                    <li><a href="#socials"><i class="fas fa-envelope"></i>Contacts</a></li>
+                    <li><a href="https://jlalomia.github.io/117_SSG/"><i class="fas fa-cogs"></i>Student Survival Guide</a></li>
+                    <li><a href="https://jlalomia.github.io/117_Business/"><i class="fas fa-briefcase"></i>Business Site</a></li>
                 </ul>
             </div>
         </nav>
@@ -47,143 +44,127 @@
 
 <body>
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-row">
-            <h2>Get Ready To Come Out Of Your Shell</h2>
-            <p>Empower yourself with essential commands and knowledge to excel in tech and coding</p>
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-row">
+                <h2>About Me</h2>
+                <p>I am currently a Business and Information Systems Student at NJIT. I am interested in learning website development, and this portfolio is for showcasing my current projects.</p>
+            </div>
         </div>
-        <div class="access">
-            <a href="#" class="acc-btn">Access Content Now</a>
+        <div class="WWS-img">
+            <img src="images/PortfolioPic.jpg">
+        </div>
+    </section>
+
+     <!-- Call to Action -->
+     <section class="RS">
+        <div class="cta">
+            
+                <div class="cta-box">
+                    <h4>Click Here To View My Resume!</h4>
+                    <a href="https://github.com/JLalomia/IS117-Resume.git" class="download-btn">Visit Resume Page Now</a>
+                </div>
+            
+        </div>
+    </section>
+
+    <section class="Impact">
+        <h1>Projects</h1>
+        <h3>The Projects I have worked on</h3>
+        <div class="Imp-row">
+            
+                <div class="Imp">
+                    <div class="impact-preview">
+                        <iframe src="https://jlalomia.github.io/117_SSG/" 
+                                title="Website Preview" 
+                                style="border: none; width: 100%; height: 200px; margin-top: 10px; border-radius: 10px;">
+                        </iframe>
+                    </div>
+                    <div class="impact-content">
+                        <p>Student Survival Guide: A website designed to help students learn about GIT, Linux, and Web Technology History</p>
+                    </div>
+                    <a href="https://jlalomia.github.io/117_SSG/" class="impact-btn" target="_blank">
+                        Visit Website
+                    </a>
+                </div>
+            
+                <div class="Imp">
+                    <div class="impact-preview">
+                        <iframe src="https://jlalomia.github.io/117_Business/" 
+                                title="Website Preview" 
+                                style="border: none; width: 100%; height: 200px; margin-top: 10px; border-radius: 10px;">
+                        </iframe>
+                    </div>
+                    <div class="impact-content">
+                        <p>Business Site: This site was meant to take a boring object and try to market it. In this case, I tried to take an egg and use the Adventure Archetype to make it interesting.</p>
+                    </div>
+                    <a href="https://jlalomia.github.io/117_Business/" class="impact-btn" target="_blank">
+                        Visit Website
+                    </a>
+                </div>
+            
         </div>
     </section>
 
     <!-- Overview of Topics -->
     <section class="topics" id="topics">
-        <h1>Our Guides Strive To Teach The Fundamentals Of</h1>
+        <h1>Some of my skills include:</h1>
         <div class="topics-row">
             
                 <div class="topic-card">
                     <div class="topic-icon">
-                        <i class="fa-solid fa-book fa-3x"></i>
+                        <i class="fab fa-python fa-3x"></i>
                     </div>
                     <div class="topic-content">
-                        <h3>History</h3>
-                        <p>Explore the evolution of the Internet</p>
+                        <h3>Python</h3>
+                        <p>Data scripting and automation expertise.</p>
                     </div>
-                    <a href="#" class="topic-btn">Learn More</a>
+                   
                 </div>
             
                 <div class="topic-card">
                     <div class="topic-icon">
-                        <i class="fa-brands fa-git fa-3x"></i>
+                        <i class="fas fa-code fa-3x"></i>
                     </div>
                     <div class="topic-content">
-                        <h3>GIT</h3>
-                        <p>Version control skills for all developers</p>
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, and responsive design</p>
                     </div>
-                    <a href="#" class="topic-btn">Learn More</a>
+                   
                 </div>
             
                 <div class="topic-card">
                     <div class="topic-icon">
-                        <i class="fa-brands fa-linux fa-3x"></i>
+                        <i class="fab fa-java fa-3x"></i>
                     </div>
                     <div class="topic-content">
-                        <h3>Linux</h3>
-                        <p>Master command-line basics in Linux</p>
+                        <h3>Java</h3>
+                        <p>Proficient in building backend systems</p>
                     </div>
-                    <a href="#" class="topic-btn">Learn More</a>
-                </div>
-            
-                <div class="topic-card">
-                    <div class="topic-icon">
-                        <i class="fa-solid fa-laptop fa-3x"></i>
-                    </div>
-                    <div class="topic-content">
-                        <h3>Web Technology</h3>
-                        <p>Get started with web development fundamentals</p>
-                    </div>
-                    <a href="#" class="topic-btn">Learn More</a>
-                </div>
-            
-        </div>
-    </section>
-    
-    <!-- Call to Action -->
-    <section class="RS">
-        <div class="cta">
-            
-                <div class="cta-box">
-                    <h4>Get Your Free Tech Cheat Sheet</h4>
-                    <a href="#" class="download-btn">Download Now</a>
+                   
                 </div>
             
         </div>
     </section>
 
-    <!-- Why We Started -->
-    <section class="WWS">
-        <div class="WWS-img">
-            <img src="images/Founder.png">
-        </div>
-        <div class="WWS-txt">
-            <h1>Why We Started</h1>
-            <p>At the heart of our philosophy is a relentless pursuit of wisdom and the belief that knowledge empowers people to live fuller, more informed lives. Our founder has dedicated their career to uncovering insights that inspire growth, clarity, and innovation.</p>
-            <p>Our Founder believes that everyone has the potential to grow, learn, and discover something new—and that the right guidance can unlock these possibilities. Their work continues to influence and shape the lives of people who are committed to lifelong learning.</p>
-        </div>
-    </section>
-
-    <!-- Impact -->
-    <section class="Impact">
-        <h1>Our Impact</h1>
-        <h3>User Reviews From Students And Professors</h3>
-        <div class="Imp-row">
-            
-                <div class="Imp">
-                    <p>“Using this service has improved my performance in my computing classes. I can now follow along with what the professor is saying with ease.”</p>
-                </div>
-            
-                <div class="Imp">
-                    <p>“After introducing my students to this guide, I saw an improvement in their understanding in the content. It explained the content in a way that they were able to follow along.”</p>
-                </div>
-            
-                <div class="Imp">
-                    <p>“I find myself coming back here in my spare time to study the different available guides when I can. They have truly helped me improve my Git and Linux knowledge, and expanded how much I have learned behind their history.”</p>
-                </div>
-            
-        </div>
-    </section>
-
-    <!-- Tutoring -->
-    <section class="tutor">
-        <div class="tutor-txt">
-            <h1>Top Rated Tutors</h1>
-            <p>Our team of tutors isn&#39;t just knowledgeable—they&#39;re passionate educators with proven track records in their fields. Each tutor brings years of experience, a commitment to excellence, and a deep understanding of the subjects they teach. With advanced degrees from top institutions and specialized certifications, they are equipped to offer high-quality, customized learning support</p>
-            <p>Beyond qualifications, our tutors are dedicated to continuous growth, staying updated on the latest teaching methods and industry trends to ensure students benefit from cutting-edge insights. Whether guiding students through complex concepts or offering strategies for long-term academic success, our tutors are committed to empowering learners to reach their full potential.</p>
-        </div>
-        <div class="tutor-img">
-            <img src="images/Tutor.png">
-        </div>
-    </section>
     <footer class="Content-Footer">
     <nav class="footer-logo">
         <h1><em>Site Links</em></h1>
         <ul>
-            <li><a href="#">Learning Index</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="https://jlalomia.github.io/117_SSG/">Student Survival Guide</a></li>
+            <li><a href="https://jlalomia.github.io/117_Business/">Business Site</a></li>
+            <li><a href="#topics">About Me</a></li>
         </ul>
     </nav>
-    <nav class="footer-menu">
-        <h1>Follow Us</h1>
+    <nav class="footer-menu" id="socials">
+        <h1>Socials</h1>
         <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
         <a href="#"><i class="fa-brands fa-tiktok fa-2x"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
     </nav>
     <div class="footer-subscription">
-        <h3>Subscribe For Access To Advanced Materials</h3>
-        <p>Join the thousands of students that use our site daily</p>
+        <h3>Stay Updated!</h3>
+        <p>By subscribing, you'll be updated on any current and future projects!</p>
         <form class="subscription-form">
             <input 
                 type="email" 
@@ -194,7 +175,6 @@
             >
             <button type="submit" class="subscribe-btn">Subscribe</button>
         </form>
-        <p id="subscription-message">Thank you for subscribing!</p>
     </div>
     <script>
         document.querySelector('.subscription-form').addEventListener('submit', function (event) {
@@ -209,8 +189,8 @@
         });
     </script>
     <div class="footer-info">
-        <p>&copy; 2024 IS117. All Rights Reserved.</p>
-        <p>Designed and Developed by IS117 Team</p>
+        <p>&copy; 2024 Julianna L. All Rights Reserved.</p>
+        <p>Designed and Developed by Julianna L</p>
     </div>
 </footer>
 </body>
